@@ -127,7 +127,7 @@ const segments = [
 本地仓库已初始化并完成首次提交（分支 `main`）。推送到 GitHub / GitLab 等远程前，先在平台新建空仓库（不要勾选自动添加 README），再执行：
 
 ```bash
-cd "/Users/xiaoxi/Documents/cursor/20260330 - 分段式进度条实现调研"
+cd /path/to/本仓库根目录   # 例如 Cursor 工作区「0330 - 分段式进度条实现调研」
 git remote add origin https://github.com/<你的用户名>/<仓库名>.git
 git push -u origin main
 ```
