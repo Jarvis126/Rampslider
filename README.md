@@ -122,6 +122,20 @@ const segments = [
 
 ---
 
+## Git 仓库与推送到远程
+
+本地仓库已初始化并完成首次提交（分支 `main`）。推送到 GitHub / GitLab 等远程前，先在平台新建空仓库（不要勾选自动添加 README），再执行：
+
+```bash
+cd "/Users/xiaoxi/Documents/cursor/20260330 - 分段式进度条实现调研"
+git remote add origin https://github.com/<你的用户名>/<仓库名>.git
+git push -u origin main
+```
+
+若远程已存在提交，可先 `git pull origin main --allow-unrelated-histories` 再推送，或使用 `git remote add` 后按平台说明操作。
+
+---
+
 ## 操作记录
 
 | 日期 | 操作 | 说明 |
@@ -131,3 +145,4 @@ const segments = [
 | 2026-03-30 | 组件封装 | 将滑块提取为 `SegmentedSlider.vue`，支持 props/emits/v-model |
 | 2026-03-30 | 一键启动脚本 | 创建 `阶梯式复杂数量滑块.command`，支持端口检测、自动浏览器 |
 | 2026-03-30 | 文档编写 | 生成 README.md，包含组件 API、算法说明、使用方法 |
+| 2026-03-30 | Git 初始化 | `git init`、`.gitignore`（排除 `node_modules` / `dist` / `.vite`）、首次提交 `f4f6fd8` |
