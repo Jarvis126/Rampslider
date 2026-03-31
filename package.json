@@ -6,16 +6,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
-    "vue": "^3.5.13",
-    "primevue": "^4.3.3",
     "@primevue/themes": "^4.3.3",
-    "primeicons": "^7.0.0"
+    "primeicons": "^7.0.0",
+    "primevue": "^4.3.3",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.30.2",
     "@vitejs/plugin-vue": "^5.2.3",
-    "vite": "^6.3.2"
+    "vite": "^6.3.2",
+    "wrangler": "^4.78.0"
   }
 }
